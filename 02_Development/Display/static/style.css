@@ -1,0 +1,155 @@
+body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+/*body {
+    background-image: url("Screen Shot 2020-07-24 at 19.38.30.png");
+    background-size: 800px 480px;
+    background-repeat: no-repeat;
+}*/
+
+table {
+    width: 800;
+    height: 480;
+    padding-left: 18px;
+    padding-bottom: 9px;
+    border: 1px solid black;
+    table-layout: fixed;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    font-size: 33px;
+    -webkit-text-stroke: 1px #802800;
+    padding-right: 18px;
+    padding-bottom: 9px;
+}
+
+th._rowHeaderSize {
+    padding-right: 18px;
+    padding-top: 5px;
+    padding-bottom: 16px
+}
+
+/*._arrowBox {
+  width: 200px; 
+  height: 35px;
+  line-height: 35px;
+  padding: 0 5px;
+  background-color: #00b3a1;
+  padding-right: 20px;
+  border: 1px solid #00776b;
+  border-right: 0;  
+  position: relative;
+}
+
+._arrowBox:after {
+  content: "";
+  display: block;
+  background-color: #00b3a1;
+  border: 1px solid #00776b;
+  border-left: 0;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  z-index: -1;
+  top: -1px;  pull it up because of 1px border 
+  right: -17.5px;  35px / 2 
+  transform: skew(-45deg);
+  -o-transform: skew(-45deg);
+  -moz-transform: skew(-45deg);
+  -webkit-transform: skew(-45deg);
+}*/
+
+div._rowHeader {
+    display: flex;
+    font-size: 27px;
+    color: #ffffff;
+    text-shadow: 1px 0px 1px black;
+    background-color: #00b3a1;
+    border: 1px solid #00776b;
+    padding-left: 6px;
+    height: 100%;
+    align-items: center;
+}
+
+span._unit {
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+th._columnHeader {
+    font-size: 83px;
+    -webkit-text-stroke: 1px #802800;
+    height: 120px;
+    padding-right: 18px;
+    padding-bottom: 9px;
+}
+
+div._dataCell {
+    padding-left: 18px;
+    padding-bottom: 18px;
+    height: 100%;
+}
+
+div._dataCell::after {
+    content: "";
+    height: 100%;
+    display: inline-block;
+}
+
+div._columnHeader-1 {
+    color: #ff5100;
+    background-color: #ff510080;
+    border: 1px solid #ff5100;
+}
+
+div._columnHeader-2 {
+    color: #ff6b00;
+    background-color: #ff6b0080;
+    border: 1px solid #ff6b00;
+}
+
+div._columnHeader-3 {
+    color: #ff9015;
+    background-color: #ff901580;
+    border: 1px solid #ff9015;
+}
+
+div._columnHeader-4 {
+    color: #d5783d;
+    background-color: #ffb13880;
+    border: 1px solid #d5783d;
+}
+
+div.patient-1 {
+    color: #ff5100;
+    background-color: #ff510033;
+    border: 1px solid #ff5100;
+}
+
+div.patient-2 {
+    color: #ff6b00;
+    background-color: #ff6b0033;
+    border: 1px solid #ff6b00;
+}
+
+div.patient-3 {
+    color: #ff9015;
+    background-color: #ff901533;
+    border: 1px solid #ff9015;
+}
+
+div.patient-4 {
+    color: #d5783d;
+    background-color: #ffb13833;
+    border: 1px solid #d5783d;
+}
