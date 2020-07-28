@@ -20,7 +20,7 @@ th {
 
 td {
     font-size: 33px;
-    -webkit-text-stroke: 1px #802800;
+    -webkit-text-stroke: .5px #802800;
     padding-right: 18px;
     padding-bottom: 9px;
 }
@@ -38,7 +38,6 @@ th._rowHeaderSize {
     -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
     padding-top: 1px;
     padding-left: 1px;
-    align-items: center;
 }
 
 div._rowHeaderContent {
@@ -49,7 +48,7 @@ div._rowHeaderContent {
     align-items: center;
 
     height: calc(100% - 2px);
-    width: calc(100% - 2px);
+    width: calc(100% - 7px);
 
     background-color: #00b3a1;
     -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
@@ -70,6 +69,9 @@ th._columnHeader {
     height: 125px;
     padding-right: 18px;
     padding-bottom: 9px;
+    padding-top: 0px;
+    margin: 0;
+    border-spacing: 0 0;
 }
 
 div._dataCell {
