@@ -35,8 +35,8 @@ th._rowHeaderSize {
     height: 100%;
     width: 100%;
     background: #00776b;
-    -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
-    padding-top: 1.9px;
+    -webkit-clip-path: polygon(0% 0%, 79% 0%, 99% 50%, 79% 100%, 0% 100%);
+    padding-top: 0.75px;
     padding-left: 1px;
 }
 
@@ -47,7 +47,7 @@ div._rowHeaderContent {
     -webkit-text-stroke: .25pt #00776b;
     align-items: center;
 
-    height: calc(100% - 2px);
+    height: calc(100% - .5px);
     width: calc(100% - 8px);
 
     background-color: #00b3a1;
