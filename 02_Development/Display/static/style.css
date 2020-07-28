@@ -5,12 +5,6 @@ body, div, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, pre, code, blockquote {
     border-width: 0;
 }
 
-/*body {
-    background-image: url("Screen Shot 2020-07-24 at 19.38.30.png");
-    background-size: 800px 480px;
-    background-repeat: no-repeat;
-}*/
-
 table {
     width: 800;
     height: 480;
@@ -33,54 +27,38 @@ td {
 
 th._rowHeaderSize {
     padding-right: 18px;
-    padding-top: 5px;
-    padding-bottom: 16px
+    padding-top: 6px;
+    padding-bottom: 15px
 }
 
-/*._arrowBox {
-  width: 200px; 
-  height: 35px;
-  line-height: 35px;
-  padding: 0 5px;
-  background-color: #00b3a1;
-  padding-right: 20px;
-  border: 1px solid #00776b;
-  border-right: 0;  
-  position: relative;
-}
-
-._arrowBox:after {
-  content: "";
-  display: block;
-  background-color: #00b3a1;
-  border: 1px solid #00776b;
-  border-left: 0;
-  width: 5px;
-  height: 5px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;  pull it up because of 1px border 
-  right: -17.5px;  35px / 2 
-  transform: skew(-45deg);
-  -o-transform: skew(-45deg);
-  -moz-transform: skew(-45deg);
-  -webkit-transform: skew(-45deg);
-}*/
-
-div._rowHeader {
-    display: flex;
-    font-size: 27px;
-    color: #ffffff;
-    text-shadow: 1px 0px 1px black;
-    background-color: #00b3a1;
-    border: 1px solid #00776b;
-    padding-left: 6px;
+._rowHeaderBorder {
     height: 100%;
+    width: 100%;
+    background: #00776b;
+    -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+    padding-top: 1px;
+    padding-left: 1px;
     align-items: center;
 }
 
+div._rowHeaderContent {
+    display: flex;
+    font-size: 27px;
+    color: #ffffff;
+    -webkit-text-stroke: .25pt #00776b;
+    align-items: center;
+
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+
+    background-color: #00b3a1;
+    -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+
+    padding-left: 6px;
+}
+
 span._unit {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -89,14 +67,14 @@ span._unit {
 th._columnHeader {
     font-size: 83px;
     -webkit-text-stroke: 1px #802800;
-    height: 120px;
+    height: 125px;
     padding-right: 18px;
     padding-bottom: 9px;
 }
 
 div._dataCell {
     padding-left: 18px;
-    padding-bottom: 18px;
+    padding-bottom: 23px;
     height: 100%;
 }
 
